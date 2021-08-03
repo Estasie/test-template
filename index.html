@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emi's blog</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="data.json"></script>
+  </head>
+  <body class="blog-body">
+    <header>
+      <a href="/" title="Go to Homepage" class="header--logo">
+        <img id="logo" src="./assets/logo.svg" />
+      </a>
+      <nav class="header--nav">
+        <a href="#" class="header--nav-item">Home</a>
+        <a href="#" class="header--nav-item">Recipes</a>
+        <a href="#" class="header--nav-item">Article</a>
+        <a href="#" class="header--nav-item">Contact</a>
+        <a href="#" class="header--nav-item">Purchase</a>
+      </nav>
+      <div class="burger-menu"></div>
+    </header>
+
+    <div class="main-screen">
+      <div class="main-screen--text">
+        <h4 class="text-cathegory"></h4>
+        <h1 class="text-title">
+         
+        </h1>
+        <div class="text-info">
+          <h5 class="text-date"></h5>
+          <!-- Нет data в JS -->
+          <!-- <div class="author-container">
+            <h5 class="by">By</h5>
+            <h5 class="text-author">Rickie Baroch</h5>
+          </div>
+          <h5 class="text-comments">4 comments</h5> -->
+        </div>
+      </div>
+    </div>
+    <div class="content-part">
+      <section class="blog-section">
+        <div class="blog-container"></div>
+        <div class="pagination-container">
+          <a href="#">
+            <div class="previous-post">
+              <img src="./assets/prevPass.svg" alt="prev" class="prev-img" />
+              <span class="pagination-text">OLDER POST</span>
+            </div>
+          </a>
+          <div class="pages">
+            <a href="#"><span>1</span></a>
+            <a href="#"><span>2</span></a>
+            <a href="#"><span>3</span></a>
+            <a href="#"><span>...</span></a>
+            <a href="#"><span>8</span></a>
+          </div>
+          <a href="#">
+            <div class="next-post">
+              <span class="pagination-text">NEXT POST</span>
+              <img src="./assets/nextPass.svg" alt="next" />
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <aside>
+        <div class="widget-container">
+          <div class="widget-title">
+            <span>About the author</span>
+          </div>
+          <div class="about-author-card">
+            <div class="aside-img-container">
+              <img src="./assets/author.jpg" alt="Ekaterina Miroshnichenko" />
+            </div>
+
+            <div class="aside-card-text-container">
+              <h4 class="text-author">Ekaterina Miroshnichenko</h4>
+              <p class="author-empl">Основатель бренда EMI</p>
+              <p class="author-descr">
+                Чемпионка мира по дизайну ногтей (Париж, 2010), двукратная
+                чемпионка Европы (Афины, Париж, 2009), судья международной
+                категории
+              </p>
+              <button class="author-button">Continue Reading</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="widget-container" id="features">
+          <div class="widget-title">
+            <span>Featured posts</span>
+          </div>
+          <div class="featured-post-card"></div>
+        </div>
+        <div class="widget-container">
+          <div class="widget-title">
+            <span>Categories</span>
+          </div>
+          <div class="categories-container">
+            <div class="cat-item">
+              <a href="#">
+                <p>Fashion</p>
+                <p>(23)</p>
+              </a>
+            </div>
+            <div class="cat-item">
+              <a href="#">
+                <p>Style & clothes</p>
+                <p>(7)</p>
+              </a>
+            </div>
+            <div class="cat-item">
+              <a href="#">
+                <p>Minimalism</p>
+                <p>(16)</p>
+              </a>
+            </div>
+            <div class="cat-item">
+              <a href="#">
+                <p>Black & White</p>
+                <p>(5)</p>
+              </a>
+            </div>
+            <div class="cat-item">
+              <a href="#">
+                <p>Modern clothes</p>
+                <p>(12)</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="widget-container" id="socialMedia">
+          <div class="widget-title">
+            <span>Social media</span>
+          </div>
+          <div class="social-media-container">
+            <button class="social-item">
+              <img src="./assets/social/fb.svg" alt="facebook" />
+              <span>32k likes</span>
+            </button>
+            <button class="social-item">
+              <img src="./assets/social/pint.svg" alt="pinterest" />
+              <span>814 followers</span>
+            </button>
+            <button class="social-item">
+              <img src="./assets/social/vimeo.svg" alt="vimeo" />
+              <span>165 followers</span>
+            </button>
+            <button class="social-item">
+              <img src="./assets/social/dribbble.svg" alt="dribbble" />
+              <span>6k followers</span>
+            </button>
+            <button class="social-item">
+              <img src="./assets/social/twitter.svg" alt="twitter" />
+              <span>130k followers</span>
+            </button>
+            <button class="social-item">
+              <img src="./assets/social/behance.svg" alt="behance" />
+              <span>37k followers</span>
+            </button>
+            <button class="social-item">
+              <img src="./assets/social/inst.svg" alt="inst" />
+              <span>854k followers</span>
+            </button>
+            <button class="social-item">
+              <img src="./assets/social/youtube.svg" alt="youtube" />
+              <span>52k followers</span>
+            </button>
+            <button class="social-item">
+              <img src="./assets/social/gplus.svg" alt="google plus" />
+              <span>642 followers</span>
+            </button>
+          </div>
+        </div>
+        <div class="widget-container" id="tags">
+          <div class="widget-title">
+            <span>Tags</span>
+          </div>
+          <div class="tags-container">
+            <button class="tag-item">Business</button>
+            <button class="tag-item">Freelance</button>
+            <button class="tag-item">Money</button>
+            <button class="tag-item">Experience</button>
+            <button class="tag-item">Lifestyle</button>
+            <button class="tag-item">SEO</button>
+            <button class="tag-item">Wordpress</button>
+            <button class="tag-item">Marketing</button>
+            <button class="tag-item">UX</button>
+            <button class="tag-item">Modern</button>
+            <button class="tag-item">Success</button>
+            <button class="tag-item">Nature</button>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <footer>
+      <a href="/" title="Go to Homepage" class="footer--logo">
+        <img id="logo" src="./assets/logo.svg" />
+      </a>
+
+      <nav class="footer-nav">
+        <a href="#" class="footer--nav-item">Home</a>
+        <a href="#" class="footer--nav-item">Recipes</a>
+        <a href="#" class="footer--nav-item">Article</a>
+        <a href="#" class="footer--nav-item">Contact</a>
+        <a href="#" class="footer--nav-item">Purchase</a>
+      </nav>
+
+      <div class="footer-social">
+        <div class="footer-social-item">
+          <a href="#">
+            <img src="./assets/social/fb.svg" alt="" />
+          </a>
+        </div>
+        <div class="footer-social-item">
+          <a href="#">
+            <img src="./assets/social/twitter.svg" alt="" />
+          </a>
+        </div>
+        <div class="footer-social-item">
+          <a href="#">
+            <img src="./assets/social/pint.svg" alt="" />
+          </a>
+        </div>
+        <div class="footer-social-item">
+          <a href="#">
+            <img src="./assets/social/gplus.svg" alt="" />
+          </a>
+        </div>
+        <div class="footer-social-item">
+          <a href="#">
+            <img src="./assets/social/behance.svg" alt="" />
+          </a>
+        </div>
+        <div class="footer-social-item">
+          <a href="#">
+            <img src="./assets/social/inst.svg" alt="" />
+          </a>
+        </div>
+      </div>
+      <hr class="divider" />
+      <p class="copyright">@2019 Logwork. All Right Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
